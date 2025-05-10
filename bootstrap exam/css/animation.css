@@ -1,0 +1,40 @@
+@keyframes type-writer {
+    
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  25% {
+    width: 10ch; /* "Develope |" is 10 characters */
+  }
+  50% {
+    width: 10ch;
+  }
+  75% {
+    width: 0ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+/* Typing and deleting effect */
+@keyframes typeAndDelete {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 14ch; /* full length of "Rahma Korish |" */
+  }
+  60% {
+    width: 14ch;
+  }
+  100% {
+    width: 0;
+  }
+}
