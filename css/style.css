@@ -1,0 +1,192 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+}
+.home{
+    background-image: url(../imgs/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.home .home-text{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
+}
+.home .home-text h1{
+  color: white;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typeAndDelete 5s steps(14) infinite;
+  border-right: 2px solid white; /* blinking cursor effect */
+}
+.home .home-text .home-links a .fa{
+    background-color: rgba(0, 0, 0, 0.2);
+    color:white;
+}
+/* .about .about-text .skill-percent .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "skill skill percent";
+}
+
+.skill {
+  grid-area: skill;
+  background: lightblue;
+}
+
+.percent {
+  grid-area: percent;
+  background: lightgreen;
+} */
+.services{
+    background-color: #F7F7F7;
+}
+.services .services-cards .card .card-body .fa{
+  background-color: rgba(0, 0, 0, 0.1);
+  width:60px;
+  }
+.services .services-cards .card-body:hover .fa{
+  background-color: rgba(0, 0, 0, 0.893);
+  color:white;
+}
+
+
+.portfolio .item .content{
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  transition: top 0.3s ease-in-out;
+}
+.portfolio .item:hover .content{
+  top:0;
+}
+.portfolio .item:hover::after{
+  opacity:1;
+}
+.portfolio .item::after{
+  content:"";
+  opacity: 0;
+  position: absolute;
+  inset:0;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.3s ease-in-out;
+}
+.portfolio .nav-tabs{
+  --bs-nav-tabs-border-color:transparent;
+}
+.portfolio .nav-tabs .nav-link{
+  --bs-nav-link-color: black;
+}
+.portfolio .nav-tabs .nav-link:hover{
+  --bs-nav-link-hover-color: black;
+}
+.portfolio .nav-tabs .nav-link.active{
+  --bs-nav-tabs-link-active-border-color: transparent transparent transparent;
+}
+.portfolio .nav-tabs .nav-link.active:after{
+  content: '';
+  display: block;
+  margin: 4px 0 0 0;
+  width: 100%;
+  height: 2px; 
+  background-color: currentColor; 
+}
+.portfolio .nav-tabs .nav-link:hover{
+  --bs-nav-tabs-link-hover-border-color: transparent transparent transparent;
+}
+.testimonials{
+    background-color: #F7F7F7;
+}
+.testimonials .carousel-indicators [data-bs-target]{
+  background-color: #5A5A5A;
+}
+.testimonials .counter{
+  background-color: white;
+}
+.testimonials .counter .cardtext .fa{
+  width:100px;
+  height: 100px;
+}
+.team{    
+  background-color: #F7F7F7;
+}
+.team .team-cards .card .card-footer{
+  background-color: #5A5A5A;
+}
+
+.team .team-cards .card .image-content .content{
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  transition: top 0.3s ease-in-out;
+}
+.team .team-cards .card .image-content:hover .content{
+  top:0;
+}
+.team .team-cards .card .image-content:hover::after{
+  opacity:1;
+}
+.team .team-cards .card .image-content::after{
+  content:"";
+  opacity: 0;
+  position: absolute;
+  inset:0;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.team .team-cards .card .image-content:hover img{
+transform: scale(1.1)
+}
+
+.team .team-cards .card .image-content img{
+transition: scale .5s ease-in-out;
+}
+
+.contact .contact-links .contact-info .fa{
+  background-color: rgba(0, 0, 0, 0.1);
+  width:60px;
+}
+.contact .contact-links .contact-info:hover .fa{
+  background-color: rgba(0, 0, 0, 1);
+  color:white;
+}
+.contact .contact-form input{
+  background-color: #F4F4F4;
+}
+.contact .contact-form textarea{
+  background-color: #F4F4F4;
+}
+/* .navbar{
+  background-color: red;
+  color:white;
+  transition: background-color 200ms linear;
+}
+.navbar.scrolled {
+  background-color: #fff !important;
+  color: black !important;
+  transition: background-color 200ms linear;
+} */
+.navbar .navbar-nav .nav-link.active::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px; 
+  background-color: currentColor; 
+}
