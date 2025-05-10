@@ -8,6 +8,17 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: "Montserrat", sans-serif;
 }
+.icon{
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .home{
     background-image: url(../imgs/imgs/bg.jpg);
     background-size: cover;
